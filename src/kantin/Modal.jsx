@@ -82,18 +82,24 @@ class Modal extends Component {
             <div className="modal-body d-flex justify-content-center flex-column">
               <img src={this.state.item ? this.state.item.image : 'https://belajar-react.smkmadinatulquran.sch.id/image/masakan1.jpg'} className="img-modal img-thumbnail" />
               <h3>{this.state.item ? this.state.item.name : ''}</h3>
-              <div className="wrapper d-flex">
+              <div className="wrapper d-flex mt-2">
                 <p className="mr-2"><img src={img} height="20" className="ikonbintang"/> {this.state.item ? this.state.item.rating : ''}</p>
+              </div>
+              <div className="wrapper d-flex">
                 <p>Rp. {this.state.item ? this.state.item.harga : ''}</p>
               </div>
+              <div className="wrapper d-flex">
+                <p className="stock"><img src={img2} height="40" className="ikonkeranjang"/>Stock: {this.state.item ? this.state.item.jumlah : ''}</p>
+              </div>
             </div>
-            <div className="modal-footer d-flex justify-content-around">
-              <p className="stock"><img src={img2} height="40" className="ikonkeranjang"/>Stock: {this.state.item ? this.state.item.jumlah : ''}</p>
+            <div className="modal-footer d-flex justify-content-between">
               <div className="wrapper">
-                <button type="button" className="btn btn-primary" onClick={_ => this.onClickHandler('-')}> - </button>
+                <button type="button" className="btn btn-info" onClick={_ => this.onClickHandler('-')}> - </button>
                 <input type="text" className="number text-center" disabled value={this.state.item ? this.state.item.pesan : ''} />
-                <button type="button" className="btn btn-primary" onClick={_ => this.onClickHandler('+')}>+</button>
-                <button type="button" className="btn btn-orange ml-2" data-dismiss="modal" onClick={this.onOrderHandler}>Pesan</button>
+                <button type="button" className="btn btn-info" onClick={_ => this.onClickHandler('+')}>+</button>
+              </div>
+              <div className="wrapper">
+                <button type="button" className="btn btn-primary ml-2" data-dismiss="modal" onClick={this.onOrderHandler}>Pesan</button>
               </div>
             </div>
           </div>

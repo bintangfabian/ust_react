@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import prof from './img/pp.jpg'
 import Header from './Header';
 import Order from './Order';
 import Category from './Category';
@@ -64,7 +65,7 @@ class Main extends Component{
                     <div className="col-4 d-flex justify-content-end">
                         <img src="https://img.icons8.com/pastel-glyph/2x/like--v2.png" height="30" className="icon-lope"/>
                         <h6 className="badge badge-warning chat-notif">3</h6>
-                        <img src="https://iconorbit.com/icons/256-watermark/1611201511385554301-Girl%20User.jpg" height="40" className="user-p"/>
+                        <img src={prof} height="40" className="user-p"/>
                     </div>
                 </div>
                 <div className="row p-3 mt-2">
