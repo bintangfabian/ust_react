@@ -52,7 +52,7 @@ class Main extends Component{
                 <div className="row bg-nav">
                     <div className="col-8 d-flex">
                         <img src="https://freeiconshop.com/wp-content/uploads/edd/menu-rounded-solid.png" height="20px" className="mt-3 mr-3"/> 
-                        <h3 className="mt-2 mr-3 ml-3">Cafe</h3>
+                        <h3 className="mt-2 mr-3 ml-3">Minicafe</h3>
                         <div className="input-group mb-2 mr-sm-2 mt-2">
                             <div className="input-group-prepend">
                             <div className="input-group-text bg-search">

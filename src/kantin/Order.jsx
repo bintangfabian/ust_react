@@ -6,7 +6,7 @@ class MyOrder extends Component {
     super(props);
     this.state = {
       list: [],
-      total: 9000,
+      total: 900,
     };
   }
 
@@ -52,7 +52,7 @@ class MyOrder extends Component {
               <img src={img} height="50"/>
             </div>
             <p className="mb-0">Jln. Kenari 12 No 77. Bekasi</p>
-            <p className="mb-0">Rp.9000/km</p>
+            <p className="mb-0">Rp.900/km</p>
           </div>
         </div>
 

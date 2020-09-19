@@ -84,6 +84,20 @@ input.bg-search{
     width: 350px;
     height: 200px;
     overflow: hidden;
+    transition: 0.2s;
+}
+.isimakan:hover {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    margin-right: 15px;
+    width: 350px;
+    height: 200px;
+    overflow: hidden;
+    transform: scale(0.97);
+
 }
 .isimakan img {
     width: 350px;
